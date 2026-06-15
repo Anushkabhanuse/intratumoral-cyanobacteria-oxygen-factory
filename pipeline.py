@@ -1,3 +1,9 @@
+import sys
+import subprocess
+try:
+    import numpy
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy", "pandas", "matplotlib", "scikit-learn", "scipy"])
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
